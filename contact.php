@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Contact Form 07</title>
+  	<title>Contact Form</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -91,8 +91,12 @@
 				        		</div>
 				        		<div class="text pl-3">
 					            <p><span>Website</span> <a href="https://pearlvillefuneral.co.zw/">pearlvillefuneral.co.zw</a></p>
-					          </div>
+					            </div>
 				            </div>
+                            <div class="form-group">
+									<a href = "index.php"><input type="submit" value="Back" class="btn btn-primary"></a>
+									<div class="submitting"></div>
+								</div>
 						</div>
 					</div>
 				</div>
