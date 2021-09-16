@@ -28,14 +28,14 @@
 
                 <div class="col-lg-12 login-form">
                     <div class="col-lg-12 login-form">
-                        <form>
+                        <form action="" method="post">
                             <div class="form-group">
                                 <label class="form-control-label">USERNAME</label>
-                                <input type="text" class="form-control" name="username" placeholder="Username">
+                                <input type="text" class="form-control" name="username" placeholder="Username" autocomplete=off>
                             </div>
                             <div class="form-group">
                                 <label class="form-control-label">PASSWORD</label>
-                                <input type="password" class="form-control" name="pass" placeholder="Password">
+                                <input type="password" class="form-control" name="pass" placeholder="Password" autocomplete=off>
                             </div>
 
                             <div class="col-lg-12 loginbttm">
@@ -43,7 +43,7 @@
                                     <button name="login" class="btn btn-outline-primary">LOGIN</button>
                                 </div>
                                 <div class="col-lg-6 login-btm back-button">
-                                    <button name="back" class="btn btn-outline-primary">BACK</button>
+                                    <a href="index.php"><input type="submit" class="btn btn-outline-primary" value="BACK" name="back"></a>
                                 </div>
                             </div>
                         </form>
@@ -53,15 +53,10 @@
             </div>
         </div>
 </body>
-</html>
 
 <?php
     include ('config.php');
     session_start();
-
-    if(isset($_POST['back'])){
-        header('location: index.php');
-    }
 
     if(isset($_POST['login'])){
         $user = $_POST["username"];
@@ -86,5 +81,11 @@
         }
     }
 
+    if(isset($_POST['back'])){
+        header('location:index.php');
+    }
+
 ?>
+
+</html>
 

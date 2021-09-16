@@ -47,7 +47,7 @@
                 <h1 class="cursive">Welcome to Pearlville Funeral</h1>
                 <h4>Your last resort</h4>
                 <hr>
-                <a href="loginadmin.php" class="btn btn-primary btn-xl">Admin Log In</a> &nbsp; <a href="login.php" class="btn btn-primary btn-xl">User Log In</a> &nbsp;<a href="#" class="btn btn-primary btn-xl page-scroll">Sign Up</a>
+                <a href="loginadmin.php" class="btn btn-primary btn-xl">Admin Log In</a> &nbsp; <a href="login.php" class="btn btn-primary btn-xl">User Log In</a> &nbsp;<a href="signup.php" class="btn btn-primary btn-xl page-scroll">Sign Up</a>
             </div>
         </div>
     </header>
