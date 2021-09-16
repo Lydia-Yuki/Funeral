@@ -73,7 +73,7 @@
         if ($result >=1){
 			//$_SESSION['login_user'] = $user;
              
-            header('location: dashboard.php');
+            header('location: dashboardadmin.php');
         }
         else{
             // echo ($count);
