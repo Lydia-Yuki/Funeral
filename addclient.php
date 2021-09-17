@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/png" href="img/favicon.png">
 
-  <title>Admin Dashboard</title>
+  <title>Add a New Client</title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
   <!-- Nucleo Icons -->
@@ -17,6 +17,7 @@
   <link href="css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link id="pagestyle" href="css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+  <link type="text/css" href="css/forms.css" rel='stylesheet'>
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">
@@ -158,126 +159,111 @@
     </div>
   </aside>
   <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
-    <!-- Navbar -->
-    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
-      <div class="container-fluid py-1 px-3">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
-            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Dashboard</li>
-          </ol>
-          <h6 class="font-weight-bolder mb-0">Dashboard</h6>
-        </nav>
-      </div>
-    </nav>
-    <!-- End Navbar -->
-    <div class="container-fluid py-4">
-      <div class="row">
-        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-          <div class="card">
-            <div class="card-body p-3">
-              <div class="row">
-                <div class="col-8">
-                  <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Today's Money</p>
-                    <h5 class="font-weight-bolder mb-0">
-                      $53,000
-                      <span class="text-success text-sm font-weight-bolder">+55%</span>
-                    </h5>
-                  </div>
-                </div>
-                <div class="col-4 text-end">
-                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                    <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <form class="form-horizontal row-fluid" method="POST">
+		<div class="control-group">
+			<label class="control-label" for="basicinput">Membership Code</label>
+				<div class="controls">
+                    <input type="text" id="basicinput" placeholder="Enter Membership Code" class="span8" name="mem_code">
+					    <span class="help-inline">10 Characters</span>
+				</div>
         </div>
-        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-          <div class="card">
-            <div class="card-body p-3">
-              <div class="row">
-                <div class="col-8">
-                  <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Today's Users</p>
-                    <h5 class="font-weight-bolder mb-0">
-                      2,300
-                      <span class="text-success text-sm font-weight-bolder">+3%</span>
-                    </h5>
-                  </div>
+        <div class="control-group">
+			<label class="control-label" for="basicinput">ID Feature</label>
+				<div class="controls">
+                    <input type="text" id="basicinput" placeholder="Enter ID Feature" class="span8" name="id_feature">
                 </div>
-                <div class="col-4 text-end">
-                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                    <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-          <div class="card">
-            <div class="card-body p-3">
-              <div class="row">
-                <div class="col-8">
-                  <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">New Clients</p>
-                    <h5 class="font-weight-bolder mb-0">
-                      +3,462
-                      <span class="text-danger text-sm font-weight-bolder">-2%</span>
-                    </h5>
-                  </div>
-                </div>
-                <div class="col-4 text-end">
-                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                    <i class="ni ni-paper-diploma text-lg opacity-10" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="control-group">
+			<label class="control-label" for="basicinput">Full Name</label>
+				<div class="controls">
+                    <input type="text" id="basicinput" placeholder="Type something here..." class="span8" name="name">
+				</div>
         </div>
-      <footer class="footer pt-3  ">
-        <div class="container-fluid">
-          <div class="row align-items-center justify-content-lg-between">
-            <div class="col-lg-6 mb-lg-0 mb-4">
-              <div class="copyright text-center text-sm text-muted text-lg-start">
-                © <script>
-                  document.write(new Date().getFullYear())
-                </script>,
-                made with <i class="fa fa-heart"></i> by
-                <a href="http://noclon.co.zw/" class="font-weight-bold" target="_blank">Noclon Networking</a>
-              </div>
-            </div>
-            
-          </div>
+        <div class="control-group">
+			<label class="control-label" for="basicinput">Age</label>
+				<div class="controls">
+                    <input type="text" id="basicinput" placeholder="Type something here..." class="span8" name="age">
+				</div>
         </div>
-      </footer>
-    </div>
-  </main>   
-    </div>
-  </div>
-  <!--   Core JS Files   -->
-  <script src="../assets/js/core/popper.min.js"></script>
-  <script src="../assets/js/core/bootstrap.min.js"></script>
-  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
-  <script src="../assets/js/plugins/chartjs.min.js"></script>
-  <script>
-    var win = navigator.platform.indexOf('Win') > -1;
-    if (win && document.querySelector('#sidenav-scrollbar')) {
-      var options = {
-        damping: '0.5'
-      }
-      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
-    }
-  </script>
-  <!-- Github buttons -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script>
+        <div class="control-group">
+			<label class="control-label" for="basicinput">Address</label>
+				<div class="controls">
+                    <input type="text" id="basicinput" placeholder="eg. 5 Ternure, Mandara, Harare" class="span8" name="address">
+				</div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="basicinput">Date of Birth</label>
+                <div class="controls">
+                    <input type="date" name="dob">
+                </div>
+        </div>
+        <div class="control-group">
+			<label class="control-label" for="basicinput">Dependents</label>
+				<div class="controls">
+                    <input type="text" id="basicinput" placeholder="eg. I. Moyo" class="span8" name="dependents">
+						<span class="help-inline">First initial and surname only</span>
+				</div>
+        </div>
+        <div class="control-group">
+			<label class="control-label" for="basicinput">Beneficiaries</label>
+				<div class="controls">
+                    <input type="text" id="basicinput" placeholder="eg. I. Moyo" class="span8" name="beneficiaries">
+						<span class="help-inline">First initial and surname only</span>
+				</div>
+        </div>
+        <div class="control-group">
+			<label class="control-label" for="basicinput">Contact</label>
+				<div class="controls">
+                    <input type="text" id="basicinput" placeholder="eg. 0771231234" class="span8" name="contact">
+				</div>
+        </div>
+        <div class="control-group">
+			<label class="control-label" for="basicinput">Select Claims</label>
+				<div class="controls">
+					<select tabindex="1" data-placeholder="Select here.." class="span8" name="select">
+						<option value="">Select here..</option>
+						<option value="Family Plan">Family Plan</option>
+						<option value="Individual Plan">Individual Plan</option>
+						<option value="Repatriations">Repatriations</option>
+						<option value="SME's Plan">SME's Plan</option>
+						<option value="The CISE Plan">The CISE Plan</option>
+                        <option value="Vatendi Plan">Vatendi Plan</option>
+					</select>
+				</div>
+        </div>
+        <div class="control-group">
+			<div class="controls">
+                <button type="submit" class="btn" name="submit">Submit</button>
+			</div>
+		</div>
+	</form>
+</main>
+  
 </body>
+<?php
+    include ('config.php');
+    //session_start();
 
+    if (isset($_POST['submit'])) {
+	// receive all input values from the form
+	    $Claims = $_POST['select'];
+        $Contact = $_POST['contact'];
+        $Beneficiaries = $_POST['beneficiaries'];
+        $Dependents = $_POST['dependents'];
+        $DOB = $_POST['dob'];
+        $Address = $_POST['address'];
+        $Age = $_POST['age'];
+        $Name = $_POST['name'];
+        $IDfeature = $_POST['id_feature'];
+        $MemCode = $_POST['mem_code'];
+
+        $sel = "INSERT INTO client (mem_code, id_feature, name, age, address, dob, dependents, beneficiaries, contact, claims) 
+        VALUES ('$MemCode','$IDfeature', '$Name', '$Age', '$Address', '$DOB', '$Dependents', '$Beneficiaries','$Contact', '$Claims')";
+
+        mysqli_query($db, $sel);
+        $que = "INSERT INTO claims (claims,mem_code) VALUES ('$Claims','$MemCode')";
+        mysqli_query($db,$que);
+		//header('location: students.php');
+    }
+    ?>
 </html>
