@@ -159,7 +159,70 @@
     </div>
   </aside>
   <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
-      
+  <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="card mb-4">
+            <div class="card-header pb-0">
+              <h6>Client Information</h6>
+            </div>
+            <div class="card-body px-0 pt-0 pb-2">
+              <div class="table-responsive p-0">
+                <table class="table align-items-center mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Membership Code</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">ID Feature</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Full Name</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Age</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Address</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Date of Birth</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Dependents</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Beneficiaries</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Contact</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Claims</th>
+                      <th class="text-secondary opacity-7"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <?php 
+                    include ('config.php');
+                    // session_start();
+                    $sel = 'SELECT * FROM client';
+
+                    if ($result = mysqli_query($db, $sel)){
+                      while($rows = mysqli_fetch_assoc($result)) {  
+                  ?>   
+                  <tr>
+                    <td><?php echo $rows['mem_code']?></td>
+                    <td><?php echo $rows['id_feature']?></td>
+                    <td><?php echo $rows['name']?></td>
+                    <td><?php echo $rows['age']?></td>
+                    <td><?php echo $rows['address']?></td>
+                    <td><?php echo $rows['dob']?></td>
+                    <td><?php echo $rows['dependents']?></td>
+                    <td><?php echo $rows['beneficiaries']?></td>
+                    <td><?php echo $rows['contact']?></td>
+                    <td><?php echo $rows['claims']?></td>
+                    <td class="align-middle">
+                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                          Edit
+                        </a>
+                      </td>
+                  </tr>
+                  <?php
+                     }
+                    }
+
+                    else { echo "0 results"; }
+                  ?>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </main>
 </body>
 </html>
